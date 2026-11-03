@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palliative Care Guide</title>
+    <meta name="description" content="Palliative Care Guide - Comprehensive clinical decision support for physicians: symptom management, opioid conversions, ACP, and end-of-life care." />
+    <meta property="og:title" content="Palliative Care Guide" />
+    <meta property="og:description" content="Palliative Care Guide - Comprehensive clinical decision support for physicians: symptom management, opioid conversions, ACP, and end-of-life care." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      (function () {
+        var t = null;
+        try { t = localStorage.getItem('palcare_theme'); } catch (e) {}
+        if (t !== 'light' && t !== 'dark') t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        if (t === 'dark') document.documentElement.classList.add('dark');
+      })();
+    </script>
+  </head>
+  <body class="bg-slate-100 text-slate-900 dark:bg-[#0b1220] dark:text-slate-100 antialiased selection:bg-teal-500 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

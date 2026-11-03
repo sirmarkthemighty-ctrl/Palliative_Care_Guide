@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Segoe UI', 'Leelawadee UI', Tahoma, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+}
+
+/* System fonts only: the app must work fully offline */
+html, body, button, input, select, textarea {
+  font-family: 'Segoe UI', 'Leelawadee UI', Tahoma, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+}
+
+html, body {
+  margin: 0;
+  background: #f1f5f9;
+  color: #0f172a;
+  -webkit-font-smoothing: antialiased;
+}
+
+html.dark, html.dark body {
+  background: #0b1220;
+  color-scheme: dark;
+  color: #f1f5f9;
+}
+
+/* Horizontal rails scroll without a visible scrollbar */
+.hide-scrollbar, .no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hide-scrollbar::-webkit-scrollbar, .no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Subtle scrollbar for clinical content panels */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.35);
+  border-radius: 9999px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: rgba(71, 85, 105, 0.45);
+}
+
+/* Animations */
+@keyframes tw-enter {
+  from {
+    opacity: var(--tw-enter-opacity, 1);
+    transform: translate3d(var(--tw-enter-translate-x, 0), var(--tw-enter-translate-y, 0), 0)
+               scale3d(var(--tw-enter-scale, 1), var(--tw-enter-scale, 1), 1);
+  }
+}
+.animate-in {
+  animation-name: tw-enter;
+  animation-duration: 180ms;
+  animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  animation-fill-mode: both;
+}
+.fade-in { --tw-enter-opacity: 0; }
+.zoom-in-95 { --tw-enter-scale: 0.95; }
+
