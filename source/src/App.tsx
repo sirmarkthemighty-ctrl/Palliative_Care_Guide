@@ -5,6 +5,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Language, NavTabId } from './types';
+import { safeStore } from './store';
 import { Header } from './components/Header';
 import { EmergencyModal } from './components/EmergencyModal';
 import { OrderSetModal } from './components/OrderSetModal';
@@ -23,15 +24,6 @@ import {
   ChevronDown,
   ExternalLink
 } from 'lucide-react';
-
-// Storage can throw (private window, blocked site data); the app must work without it.
-const safeStore = (key: string, value?: string): string | null => {
-  try {
-    if (value === undefined) return localStorage.getItem(key);
-    localStorage.setItem(key, value);
-  } catch {}
-  return null;
-};
 
 export default function App() {
   const [currentTab, setCurrentTab] = useState<NavTabId>('when-to-start');

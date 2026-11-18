@@ -17,6 +17,15 @@
         if (t === 'dark') document.documentElement.classList.add('dark');
       })();
     </script>
+    <script>
+      // Bedside UI: web fonts added by script so they never block first paint; offline falls back to system fonts.
+      (function () {
+        var l = document.createElement('link');
+        l.rel = 'stylesheet';
+        l.href = 'https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap';
+        document.head.appendChild(l);
+      })();
+    </script>
   </head>
   <body class="bg-slate-100 text-slate-900 dark:bg-[#0b1220] dark:text-slate-100 antialiased selection:bg-teal-500 selection:text-white">
     <div id="root"></div>

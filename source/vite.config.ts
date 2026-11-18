@@ -4,8 +4,10 @@ import {viteSingleFile} from 'vite-plugin-singlefile';
 import path from 'path';
 import {defineConfig} from 'vite';
 
-export default defineConfig(() => {
+export default defineConfig(({mode}) => {
+  const opioid = mode === 'opioid'; // standalone opioid calculator: one HTML entry per singlefile build
   return {
+    build: opioid ? {outDir: 'dist-opioid', rollupOptions: {input: path.resolve(import.meta.dirname, 'opioid.html')}} : {},
     plugins: [react(), tailwindcss(), viteSingleFile()],
     resolve: {
       alias: {

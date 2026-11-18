@@ -3,12 +3,12 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --font-sans: 'Segoe UI', 'Leelawadee UI', Tahoma, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+  --font-sans: 'IBM Plex Sans', 'IBM Plex Sans Thai', 'Segoe UI', 'Leelawadee UI', Tahoma, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
-/* System fonts only: the app must work fully offline */
+/* Bedside UI: IBM Plex when online (loaded by script in index.html), system fonts offline */
 html, body, button, input, select, textarea {
-  font-family: 'Segoe UI', 'Leelawadee UI', Tahoma, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+  font-family: 'IBM Plex Sans', 'IBM Plex Sans Thai', 'Segoe UI', 'Leelawadee UI', Tahoma, -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 html, body {
@@ -66,3 +66,16 @@ html.dark, html.dark body {
 .fade-in { --tw-enter-opacity: 0; }
 .zoom-in-95 { --tw-enter-scale: 0.95; }
 
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-in { animation: none; }
+}
+
+/* Bedside UI: visible keyboard focus on every control */
+:focus-visible { outline: 2px solid #6366f1; outline-offset: 2px; }
+.dark :focus-visible { outline-color: #a5b4fc; }
+
+/* Bedside UI: Fluent touches, two-layer elevation and quick press feedback */
+.shadow-sm { box-shadow: 0 0 2px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.14); }
+button { transition-duration: .1s; }
+button:active:not(:disabled) { filter: brightness(.93); }

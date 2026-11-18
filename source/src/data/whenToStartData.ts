@@ -346,14 +346,14 @@ export const DISEASE_SPECIFIC_TRIGGERS: DiseaseTrigger[] = [
     criteriaEn: [
       'Acute Stroke: Persistent coma or vegetative state > 3 days with brainstem deficit, absent withdrawal, and multiorgan failure.',
       'Chronic Stroke: Bedridden > 6 months, unable to take oral nutrition, recurrent aspiration pneumonias, weight loss > 10% in 6 months.',
-      'Motor Neuron Disease (ALS/MND): Severe dysphagia, dependent in basic ADL, FVC < 70% with orthopnea/hypoventilation, recurrent aspiration.',
+      'Motor Neuron Disease (ALS/MND): Severe dysphagia, dependent in basic ADL, FVC < 40-50% with orthopnea/hypoventilation, recurrent aspiration.',
       'Advanced Parkinson Disease: Severe motor disability (Hoehn & Yahr Stage 5), refractory to dopaminergic drugs, hallucinations/dementia.',
       'Severe Dementia (FAST Stage 7): Unable to walk or speak beyond few words, total dependence in all ADL, recurrent pneumonia/febrile episodes, urinary/fecal incontinence.'
     ],
     criteriaTh: [
       'โรคหลอดเลือดสมองระยะเฉียบพลัน: โคม่าหรือภาวะผักนานกว่า 3 วัน ร่วมกับก้านสมองสูญเสียหน้าที่ ขาดการตอบสนองต่อความเจ็บปวด',
       'โรคหลอดเลือดสมองระยะเรื้อรัง: ติดเตียงนานเกิน 6 เดือนขึ้นไป รับอาหาร/น้ำไม่ได้ สำลักปอดอักเสบซ้ำ น้ำหนักลด > 10% ใน 6 เดือน',
-      'โรคเซลล์ประสาทสั่งการเสื่อม (ALS/MND): กลืนลำบากมาก หายใจเหนื่อยเวลานอนราบ (Orthopnea) หรือ FVC < 70% สำลักซ้ำ',
+      'โรคเซลล์ประสาทสั่งการเสื่อม (ALS/MND): กลืนลำบากมาก หายใจเหนื่อยเวลานอนราบ (Orthopnea) หรือ FVC < 40-50% สำลักซ้ำ',
       'โรคพาร์กินสันระยะท้าย: อาการรุนแรงติดเตียง (Hoehn & Yahr ระยะ 5) ดื้อต่อยารับประทาน มีอาการทางจิตประสาท/ประสาทหลอน',
       'สมองเสื่อมระยะรุนแรง (FAST Stage 7): เดินไม่ได้ พูดได้ไม่เกินสองสามคำ พึ่งพิงผู้อื่นทั้งหมด มีปอดอักเสบจากการสำลักซ้ำๆ กลั้นขับถ่ายไม่ได้'
     ],

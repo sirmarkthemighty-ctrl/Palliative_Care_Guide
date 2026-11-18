@@ -21,8 +21,11 @@ protocols, product labels or clinical judgement.
 - Bedside emergencies: opioid toxicity, bleeding, cord compression, SVC syndrome, hypercalcemia, bowel obstruction.
 
 Tap the version badge for the changelog. Content follows the Thai Ministry of Public Health palliative care CPG 2563.
-On 2026-11-03 doses and calculator logic were reviewed against standard practice; the CPG tables themselves were not
-available to check against, so verify before relying on them.
+On 2026-11-03 doses and calculator logic were reviewed against standard practice. On 2026-11-17 the opioid calculator
+was checked against the CPG itself (Department of Medical Services, first printing September 2020, pages 91, 93 and 94).
+The IV fentanyl and IV tramadol ratios are not in the CPG and are approximate. Verify every dose before relying on it.
+
+The opioid calculator also runs on its own as `opioid-calculator.html`.
 
 ## Building
 

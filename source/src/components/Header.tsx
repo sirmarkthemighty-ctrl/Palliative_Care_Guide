@@ -50,6 +50,7 @@ export const Header: React.FC<HeaderProps> = ({
     shortEn: string;
     shortTh: string;
     tone: string;
+    onTone: string;
     Icon: React.ComponentType<{ className?: string }>;
   }[] = [
     {
@@ -58,7 +59,8 @@ export const Header: React.FC<HeaderProps> = ({
       labelTh: 'เริ่มเมื่อใด (SPICT)',
       shortEn: 'Start',
       shortTh: 'คัดกรอง',
-      tone: 'bg-teal-600 hover:bg-teal-700 border-teal-700',
+      tone: 'bg-teal-50 hover:bg-teal-100 border-teal-200 text-teal-700 dark:bg-teal-950/40 dark:hover:bg-teal-900/50 dark:border-teal-800 dark:text-teal-300',
+      onTone: 'bg-teal-600 hover:bg-teal-700 border-teal-700 text-white',
       Icon: Activity
     },
     {
@@ -67,7 +69,8 @@ export const Header: React.FC<HeaderProps> = ({
       labelTh: 'วางแผนล่วงหน้า (ม.12)',
       shortEn: 'ACP/Law',
       shortTh: 'ACP/ม.12',
-      tone: 'bg-indigo-600 hover:bg-indigo-700 border-indigo-700',
+      tone: 'bg-indigo-50 hover:bg-indigo-100 border-indigo-200 text-indigo-700 dark:bg-indigo-950/40 dark:hover:bg-indigo-900/50 dark:border-indigo-800 dark:text-indigo-300',
+      onTone: 'bg-indigo-600 hover:bg-indigo-700 border-indigo-700 text-white',
       Icon: FileCheck2
     },
     {
@@ -76,7 +79,8 @@ export const Header: React.FC<HeaderProps> = ({
       labelTh: 'คำนวณโอปิออยด์',
       shortEn: 'Opioids',
       shortTh: 'โอปิออยด์',
-      tone: 'bg-blue-600 hover:bg-blue-700 border-blue-700',
+      tone: 'bg-blue-50 hover:bg-blue-100 border-blue-200 text-blue-700 dark:bg-blue-950/40 dark:hover:bg-blue-900/50 dark:border-blue-800 dark:text-blue-300',
+      onTone: 'bg-blue-600 hover:bg-blue-700 border-blue-700 text-white',
       Icon: Pill
     },
     {
@@ -85,7 +89,8 @@ export const Header: React.FC<HeaderProps> = ({
       labelTh: 'จัดการอาการรบกวน',
       shortEn: 'Symptoms',
       shortTh: 'อาการ',
-      tone: 'bg-emerald-600 hover:bg-emerald-700 border-emerald-700',
+      tone: 'bg-emerald-50 hover:bg-emerald-100 border-emerald-200 text-emerald-700 dark:bg-emerald-950/40 dark:hover:bg-emerald-900/50 dark:border-emerald-800 dark:text-emerald-300',
+      onTone: 'bg-emerald-600 hover:bg-emerald-700 border-emerald-700 text-white',
       Icon: Stethoscope
     },
     {
@@ -94,7 +99,8 @@ export const Header: React.FC<HeaderProps> = ({
       labelTh: 'ประเมินวาระท้าย',
       shortEn: 'Dying',
       shortTh: 'วาระท้าย',
-      tone: 'bg-amber-600 hover:bg-amber-700 border-amber-700',
+      tone: 'bg-amber-50 hover:bg-amber-100 border-amber-200 text-amber-700 dark:bg-amber-950/40 dark:hover:bg-amber-900/50 dark:border-amber-800 dark:text-amber-300',
+      onTone: 'bg-amber-600 hover:bg-amber-700 border-amber-700 text-white',
       Icon: Clock
     },
     {
@@ -103,7 +109,8 @@ export const Header: React.FC<HeaderProps> = ({
       labelTh: 'การดูแลระยะสุดท้าย',
       shortEn: 'Care',
       shortTh: 'ดูแลระยะท้าย',
-      tone: 'bg-violet-600 hover:bg-violet-700 border-violet-700',
+      tone: 'bg-violet-50 hover:bg-violet-100 border-violet-200 text-violet-700 dark:bg-violet-950/40 dark:hover:bg-violet-900/50 dark:border-violet-800 dark:text-violet-300',
+      onTone: 'bg-violet-600 hover:bg-violet-700 border-violet-700 text-white',
       Icon: Heart
     },
     {
@@ -112,7 +119,8 @@ export const Header: React.FC<HeaderProps> = ({
       labelTh: 'แนวทาง CPG & อ้างอิง',
       shortEn: 'CPG',
       shortTh: 'CPG/อ้างอิง',
-      tone: 'bg-slate-600 hover:bg-slate-700 border-slate-700',
+      tone: 'bg-slate-50 hover:bg-slate-100 border-slate-200 text-slate-700 dark:bg-slate-950/40 dark:hover:bg-slate-900/50 dark:border-slate-800 dark:text-slate-300',
+      onTone: 'bg-slate-600 hover:bg-slate-700 border-slate-700 text-white',
       Icon: BookOpen
     }
   ];
@@ -192,10 +200,10 @@ export const Header: React.FC<HeaderProps> = ({
                 }}
                 aria-label={language === 'en' ? guide.labelEn : guide.labelTh}
                 title={language === 'en' ? guide.labelEn : guide.labelTh}
-                className={`flex flex-col sm:flex-row min-w-0 sm:flex-grow-0 items-center justify-center gap-0.5 sm:gap-1.5 md:gap-2 ${guide.tone} border text-white px-0.5 py-1.5 sm:px-3 sm:py-2 md:px-3.5 md:py-2 rounded-lg font-bold shadow-xs transition-all active:scale-95 text-xs md:text-sm cursor-pointer ${
+                className={`flex flex-col sm:flex-row min-w-0 sm:flex-grow-0 items-center justify-center gap-0.5 sm:gap-1.5 md:gap-2 ${isActive ? guide.onTone : guide.tone} border px-0.5 py-1.5 sm:px-3 sm:py-2 md:px-3.5 md:py-2 rounded-lg font-bold shadow-xs transition-all active:scale-95 text-xs md:text-sm cursor-pointer ${
                   isActive
                     ? 'ring-2 ring-offset-2 ring-slate-800 dark:ring-white ring-offset-slate-100 dark:ring-offset-[#0b1220] scale-[1.02] z-10 opacity-100'
-                    : 'opacity-85 hover:opacity-100'
+                    : ''
                 }`}
               >
                 <Icon className="w-4 h-4 sm:w-3.5 sm:h-3.5 md:w-4 md:h-4 shrink-0" />
@@ -237,7 +245,7 @@ export const Header: React.FC<HeaderProps> = ({
           {/* Bedside Emergency Button */}
           <button
             onClick={onOpenEmergency}
-            className="h-full px-2.5 sm:px-3.5 rounded-lg border border-rose-700 bg-rose-600 hover:bg-rose-700 text-white font-bold shadow-xs flex items-center gap-1.5 text-xs md:text-sm shrink-0 active:scale-95 transition-all cursor-pointer"
+            className="h-full px-2.5 sm:px-3.5 rounded-lg border border-rose-200 bg-rose-50 hover:bg-rose-100 text-rose-700 dark:bg-rose-950/40 dark:hover:bg-rose-900/50 dark:border-rose-800 dark:text-rose-300 font-bold shadow-xs flex items-center gap-1.5 text-xs md:text-sm shrink-0 active:scale-95 transition-all cursor-pointer"
             title={language === 'en' ? 'Palliative Emergencies' : 'ภาวะฉุกเฉินระยะท้าย'}
           >
             <AlertTriangle className="w-3.5 h-3.5 sm:w-4 sm:h-4 animate-bounce" />
@@ -248,7 +256,7 @@ export const Header: React.FC<HeaderProps> = ({
           {/* Terminal Order Set Button */}
           <button
             onClick={onOpenOrderSetModal}
-            className="h-full px-2.5 sm:px-3.5 rounded-lg border border-teal-700 bg-teal-600 hover:bg-teal-700 text-white font-bold shadow-xs flex items-center gap-1.5 text-xs md:text-sm shrink-0 active:scale-95 transition-all cursor-pointer"
+            className="h-full px-2.5 sm:px-3.5 rounded-lg border border-teal-200 bg-teal-50 hover:bg-teal-100 text-teal-700 dark:bg-teal-950/40 dark:hover:bg-teal-900/50 dark:border-teal-800 dark:text-teal-300 font-bold shadow-xs flex items-center gap-1.5 text-xs md:text-sm shrink-0 active:scale-95 transition-all cursor-pointer"
             title={language === 'en' ? 'Terminal Comfort Order Set' : 'ชุดคำสั่งแพทย์วาระสุดท้าย'}
           >
             <FileCheck2 className="w-3.5 h-3.5 sm:w-4 sm:h-4" />

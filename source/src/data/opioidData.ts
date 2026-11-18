@@ -85,8 +85,8 @@ export const OPIOID_DRUGS: OpioidDrug[] = [
     // 50 mcg/hr ≈ 135-224 mg/d oral morphine (mid ~180)
     factorToOralMorphine: 2.4, // 25 mcg/hr ≈ 60 mg oral morphine
     factorFromOralMorphine: 1 / 2.4,
-    formulationsEn: ['Patch 12.5 mcg/hr', 'Patch 25 mcg/hr', 'Patch 50 mcg/hr', 'Patch 75 mcg/hr', 'Patch 100 mcg/hr'],
-    formulationsTh: ['แผ่นแปะ 12.5 มคก./ชม.', 'แผ่นแปะ 25 มคก./ชม.', 'แผ่นแปะ 50 มคก./ชม.', 'แผ่นแปะ 75 มคก./ชม.', 'แผ่นแปะ 100 มคก./ชม.'],
+    formulationsEn: ['Patch 12 mcg/hr', 'Patch 25 mcg/hr', 'Patch 50 mcg/hr', 'Patch 75 mcg/hr', 'Patch 100 mcg/hr'],
+    formulationsTh: ['แผ่นแปะ 12 มคก./ชม.', 'แผ่นแปะ 25 มคก./ชม.', 'แผ่นแปะ 50 มคก./ชม.', 'แผ่นแปะ 75 มคก./ชม.', 'แผ่นแปะ 100 มคก./ชม.'],
     frequencyEn: 'Apply to dry hairless skin; replace every 72 hours (3 days)',
     frequencyTh: 'ปิดบริเวณผิวหนังที่แห้ง เรียบ ไม่มีขน เปลี่ยนแผ่นยาทุก 72 ชม. (3 วัน)',
     notesEn: 'Lipophilic opioid. Onset is delayed (12-24 hours). Keep previous opioid running for first 12-24 hrs. Avoid external heat (electric blanket, hot water bag, fever increases absorption). Less constipation.',
@@ -138,8 +138,8 @@ export const OPIOID_DRUGS: OpioidDrug[] = [
     nameTh: 'ทรามาดอลฉีด เข้าหลอดเลือดดำ (IV) / ใต้ผิวหนัง (SC)',
     route: 'iv_sc',
     unit: 'mg/day',
-    factorToOralMorphine: 0.15, // 100 mg IV Tramadol ≈ 15 mg Oral Morphine
-    factorFromOralMorphine: 1 / 0.15,
+    factorToOralMorphine: 0.1, // set equal to oral tramadol (100 mg ≈ 10 mg oral morphine); PCF parenteral 1:10 would give 0.3, low-quality evidence
+    factorFromOralMorphine: 10.0,
     formulationsEn: ['Ampoule 50 mg / 1 mL', 'Ampoule 100 mg / 2 mL'],
     formulationsTh: ['แอมพูล 50 มก. / 1 มล.', 'แอมพูล 100 มก. / 2 มล.'],
     frequencyEn: 'Every 6-8 hours IV slowly over 2-3 minutes; Max 400 mg/day',
@@ -178,8 +178,8 @@ export const OPIOID_DRUGS: OpioidDrug[] = [
     factorFromOralMorphine: 10.0,
     formulationsEn: ['Tablet 15 mg', 'Tablet 30 mg'],
     formulationsTh: ['ยาเม็ด 15 มก.', 'ยาเม็ด 30 มก.'],
-    frequencyEn: 'Every 4-6 hours; Max 240-360 mg/day',
-    frequencyTh: 'รับประทานทุก 4-6 ชม. สูงสุด 240-360 มก./วัน',
+    frequencyEn: 'Every 4-6 hours; Max 240 mg/day',
+    frequencyTh: 'รับประทานทุก 4-6 ชม. สูงสุด 240 มก./วัน',
     notesEn: 'Prodrug converted to morphine by CYP2D6. Ineffective in poor metabolizers; toxic in ultra-rapid metabolizers. Removed from WHO pediatric guideline.',
     notesTh: 'เป็น Prodrug ต้องเปลี่ยนเป็นมอร์ฟีนผ่าน CYP2D6 ใน slow metabolizer จะไม่หายปวด ส่วน ultra-rapid จะเกิดพิษ WHO ถอดออกจากแนวทางในเด็กแล้ว',
     renalSafety: 'caution',
@@ -197,7 +197,7 @@ export interface ThaiCpgFentanylTableEntry {
 
 // Exactly from Thai CPG Table 9.1.3 (Page 94 / OCR Page 105)
 export const THAI_CPG_FENTANYL_TABLE: ThaiCpgFentanylTableEntry[] = [
-  { oralMorphineRange: '20 - 44 mg/day', minOralMorphine: 20, maxOralMorphine: 44, patchDoseMcgHr: 12.5 },
+  { oralMorphineRange: '20 - 44 mg/day', minOralMorphine: 20, maxOralMorphine: 44, patchDoseMcgHr: 12 },
   { oralMorphineRange: '45 - 134 mg/day', minOralMorphine: 45, maxOralMorphine: 134, patchDoseMcgHr: 25 },
   { oralMorphineRange: '135 - 224 mg/day', minOralMorphine: 135, maxOralMorphine: 224, patchDoseMcgHr: 50 },
   { oralMorphineRange: '225 - 314 mg/day', minOralMorphine: 225, maxOralMorphine: 314, patchDoseMcgHr: 75 },

@@ -100,7 +100,7 @@ export const SYMPTOMS_DATA: SymptomDetail[] = [
       {
         drug: 'Fentanyl Transdermal Patch',
         route: 'Transdermal patch',
-        dose: '12.5, 25, 50, 75, 100 mcg/hr',
+        dose: '12, 25, 50, 75, 100 mcg/hr',
         frequency: 'Change every 72 hours (3 days)',
         indicationOrNote: 'Preferred in renal failure. Slow onset (12-24h); overlap previous opioid for 12-24h after first patch. Do not apply external heat.'
       },
@@ -172,7 +172,7 @@ export const SYMPTOMS_DATA: SymptomDetail[] = [
       {
         drug: 'เฟนตานิลแผ่นแปะ (Fentanyl Patch)',
         route: 'แผ่นแปะผิวหนัง',
-        dose: '12.5, 25, 50, 75, 100 มคก./ชม.',
+        dose: '12, 25, 50, 75, 100 มคก./ชม.',
         frequency: 'เปลี่ยนแผ่นยาทุก 72 ชม. (3 วัน)',
         indicationOrNote: 'ยาทางเลือกอันดับแรกในผู้ป่วยไตวาย เริ่มออกฤทธิ์ช้า 12-24 ชม. ห้ามประคบร้อนบนแผ่นยา'
       },

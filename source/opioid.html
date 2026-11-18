@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Opioid Equianalgesic Calculator</title>
+    <meta name="description" content="Opioid equianalgesic calculator for palliative care: oral, IV/SC, fentanyl patch, tramadol, codeine and oxycodone conversion with cross-tolerance reduction." />
+    <meta property="og:title" content="Opioid Equianalgesic Calculator" />
+    <meta property="og:description" content="Opioid equianalgesic calculator for palliative care: oral, IV/SC, fentanyl patch, tramadol, codeine and oxycodone conversion with cross-tolerance reduction." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      (function () {
+        var t = null;
+        try { t = localStorage.getItem('palcare_theme'); } catch (e) {}
+        if (t !== 'light' && t !== 'dark') t = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        if (t === 'dark') document.documentElement.classList.add('dark');
+      })();
+    </script>
+    <script>
+      // Bedside UI: web fonts added by script so they never block first paint; offline falls back to system fonts.
+      (function () {
+        var l = document.createElement('link');
+        l.rel = 'stylesheet';
+        l.href = 'https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700;800&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap';
+        document.head.appendChild(l);
+      })();
+    </script>
+  </head>
+  <body class="bg-slate-100 text-slate-900 dark:bg-[#0b1220] dark:text-slate-100 antialiased selection:bg-teal-500 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/opioid-main.tsx"></script>
+  </body>
+</html>
+
