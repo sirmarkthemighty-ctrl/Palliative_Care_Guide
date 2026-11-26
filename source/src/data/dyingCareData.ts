@@ -129,7 +129,7 @@ export const NINE_PHYSICAL_SIGNS: DyingSign[] = [
       'Elevate the head of bed; maintain a gentle breeze with a handheld fan directed towards the face.'
     ],
     careActionTh: [
-      'ให้ยามอร์ฟีนฉีดใต้ผิวหนังขนาดต่ำ (เช่น 2.5 - 5 มก. SC) เพื่อระงับความรู้สึกหายใจไม่อิ่ม',
+      'ให้ยา morphine ฉีดใต้ผิวหนังขนาดต่ำ (เช่น 2.5 - 5 มก. SC) เพื่อระงับความรู้สึกหายใจไม่อิ่ม',
       'ยกหัวเตียงสูงเล็กน้อย ใช้พัดลมมือถือเปิดเป่าลมเย็นอ่อนๆ บริเวณใบหน้า'
     ],
     familyGuidanceEn:
@@ -151,7 +151,7 @@ export const NINE_PHYSICAL_SIGNS: DyingSign[] = [
     ],
     careActionTh: [
       'ตรวจหาสาเหตุทางกายก่อน (เช่น ปัสสาวะคั่ง, ท้องผูก, ท่านอนกดทับ, แผลกดทับ)',
-      'หากประเมินแล้วน่าจะมีความไม่สุขสบาย ให้ยามอร์ฟีน หรือมิดาโซแลมขนาดต่ำเพื่อช่วยให้ผ่อนคลาย'
+      'หากประเมินแล้วน่าจะมีความไม่สุขสบาย ให้ยา morphine หรือ midazolam ขนาดต่ำเพื่อช่วยให้ผ่อนคลาย'
     ],
     familyGuidanceEn:
       'Differentiate involuntary vocalization from pain. Reassure the family while verifying that pain medications are optimized.',
@@ -243,7 +243,7 @@ export const ANTICIPATORY_PRESCRIBING = [
     symptomEn: 'Pain & Breathlessness',
     symptomTh: 'ความปวด และ อาการเหนื่อยหอบ',
     drugEn: 'Morphine Injection',
-    drugTh: 'มอร์ฟีนชนิดฉีด (Morphine Injection 10 mg/mL)',
+    drugTh: 'Morphine ชนิดฉีด (10 mg/mL)',
     doseEn: '2.5 - 5 mg SC every 1-2 hours PRN (opioid-naive) or 10-15% of 24h dose',
     doseTh: '2.5 - 5 มก. ฉีดใต้ผิวหนัง (SC) ทุก 1-2 ชม. เมื่อมีอาการ หรือ 10-15% ของขนาด 24 ชม.',
     route: 'SC (via butterfly needle)',
@@ -253,7 +253,7 @@ export const ANTICIPATORY_PRESCRIBING = [
     symptomEn: 'Restlessness, Agitation & Panic',
     symptomTh: 'กระสับกระส่าย วิตกกังวล และตื่นตระหนก',
     drugEn: 'Midazolam Injection',
-    drugTh: 'มิดาโซแลมชนิดฉีด (Midazolam 5 mg/mL)',
+    drugTh: 'Midazolam ชนิดฉีด (5 mg/mL)',
     doseEn: '2.5 - 5 mg SC every 1-2 hours PRN (or continuous SC infusion 0.5-1 mg/hr)',
     doseTh: '2.5 - 5 มก. ฉีดใต้ผิวหนัง (SC) ทุก 1-2 ชม. เมื่อมีอาการ (หรือดริป 0.5-1 มก./ชม.)',
     route: 'SC',
@@ -263,7 +263,7 @@ export const ANTICIPATORY_PRESCRIBING = [
     symptomEn: 'Terminal Airway Secretions',
     symptomTh: 'เสมหะคั่งในคอหอย (Death Rattle)',
     drugEn: 'Hyoscine butylbromide (Buscopan®)',
-    drugTh: 'ไฮออสซีน บิวทิลโบรไมด์ (Buscopan® 20 mg/mL)',
+    drugTh: 'Hyoscine butylbromide (Buscopan® 20 mg/mL)',
     doseEn: '20 mg SC every 4-6 hours PRN or regular (Max 100 mg/day)',
     doseTh: '20 มก. ฉีดใต้ผิวหนัง (SC) ทุก 4-6 ชม. เมื่อมีอาการหรือฉีดประจำ (สูงสุด 100 มก./วัน)',
     route: 'SC',
@@ -273,7 +273,7 @@ export const ANTICIPATORY_PRESCRIBING = [
     symptomEn: 'Nausea, Vomiting & Hallucinations',
     symptomTh: 'คลื่นไส้ อาเจียน และเห็นภาพหลอน',
     drugEn: 'Haloperidol Injection',
-    drugTh: 'ฮาโลเพอริดอลชนิดฉีด (Haloperidol 5 mg/mL)',
+    drugTh: 'Haloperidol ชนิดฉีด (5 mg/mL)',
     doseEn: '0.5 - 1.5 mg SC every 8-12 hours PRN or regular',
     doseTh: '0.5 - 1.5 มก. ฉีดใต้ผิวหนัง (SC) ทุก 8-12 ชม. เมื่อมีอาการหรือฉีดประจำ',
     route: 'SC',

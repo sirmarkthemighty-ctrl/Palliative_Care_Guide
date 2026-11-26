@@ -172,7 +172,7 @@ export const AND_VS_DNR = {
     {
       action: 'Endotracheal Intubation & Mechanical Ventilation',
       andConceptEn: 'Avoid invasive breathing tube that prevents speech, swallowing, and bedside communication with loved ones. Relieve breathlessness with opioids and positioning instead.',
-      andConceptTh: 'หลีกเลี่ยงการใส่ท่อช่วยหายใจที่ทำให้ผู้ป่วยพูดไม่ได้ กลืนไม่ได้ และต้องถูกแยกไปอยู่หอวิกฤต โดยใช้ยามอร์ฟีน จัดท่านอน และพัดลมระบายอากาศเพื่อบรรเทาอาการเหนื่อยหอบแทน'
+      andConceptTh: 'หลีกเลี่ยงการใส่ท่อช่วยหายใจที่ทำให้ผู้ป่วยพูดไม่ได้ กลืนไม่ได้ และต้องถูกแยกไปอยู่หอวิกฤต โดยใช้ยา morphine จัดท่านอน และพัดลมระบายอากาศเพื่อบรรเทาอาการเหนื่อยหอบแทน'
     },
     {
       action: 'Vasopressors & Invasive Monitoring',

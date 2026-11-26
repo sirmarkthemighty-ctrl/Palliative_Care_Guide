@@ -68,7 +68,7 @@ export const PALLIATIVE_EMERGENCIES: PalliativeEmergency[] = [
       'กดการหายใจ: อัตราการหายใจช้ากว่า 8-10 ครั้ง/นาที หายใจตื้น เขียวคล้ำ',
       'รูม่านตาหดเล็กเป็นจุด (Pinpoint pupils)',
       'หมดสติ ง่วงซึมลึกมาก ปลุกไม่ตื่น (Sedation score 3)',
-      'พิษต่อระบบประสาท (Opioid-Induced Neurotoxicity: OIN): กล้ามเนื้อกระตุก (Myoclonus), ประสาทหลอน, สับสนเพ้อ, หรือปวดไวต่อสัมผัสผิดปกติ (Allodynia ปวดมากขึ้นเมื่อเพิ่มขนาดมอร์ฟีน)'
+      'พิษต่อระบบประสาท (Opioid-Induced Neurotoxicity: OIN): กล้ามเนื้อกระตุก (Myoclonus), ประสาทหลอน, สับสนเพ้อ, หรือปวดไวต่อสัมผัสผิดปกติ (Allodynia ปวดมากขึ้นเมื่อเพิ่มขนาด morphine)'
     ],
     immediateManagementEn: [
       'Stimulate patient and apply oxygen via bag-valve-mask or nasal cannula.',
@@ -101,7 +101,7 @@ export const PALLIATIVE_EMERGENCIES: PalliativeEmergency[] = [
       'Rotate opioid to Fentanyl or Methadone if patient had severe neurotoxicity (myoclonus) from accumulated metabolites.'
     ],
     cautionsTh: [
-      'หากผู้ป่วยอยู่ในระยะใกล้เสียชีวิตตามธรรมชาติ และมีการหายใจแบบ Cheyne-Stokes โดยไม่ได้เพิ่งปรับเพิ่มมอร์ฟีน ห้ามฉีด Naloxone เพราะเป็นการเปลี่ยนแปลงตามธรรมชาติ ไม่ใช่พิษจากยา',
+      'หากผู้ป่วยอยู่ในระยะใกล้เสียชีวิตตามธรรมชาติ และมีการหายใจแบบ Cheyne-Stokes โดยไม่ได้เพิ่งปรับเพิ่ม morphine ห้ามฉีด Naloxone เพราะเป็นการเปลี่ยนแปลงตามธรรมชาติ ไม่ใช่พิษจากยา',
       'หากเกิดภาวะพิษต่อระบบประสาท (Myoclonus) จากสารเมแทบอไลต์สะสมในไต ให้หมุนเวียนเปลี่ยนยา (Opioid rotation) เป็น Fentanyl'
     ]
   },
@@ -292,7 +292,7 @@ export const PALLIATIVE_EMERGENCIES: PalliativeEmergency[] = [
       'การใส่สายระบายกระเพาะอาหาร (NG Tube): ใส่เพื่อระบายน้ำย่อยลดความดันในกระเพาะชั่วคราวขณะอาเจียนรุนแรง สามารถพิจารณาถอดออกได้เมื่อยาควบคุมอาการได้ดี',
       'ข้อห้ามเด็ดขาด: หยุดยาเร่งการบีบตัวของทางเดินอาหาร (Metoclopramide) ทันที เพราะจะทำให้ลำไส้บีบตัวสู้กับส่วนที่ตีบจนเสี่ยงต่อลำไส้แตกทะลุ',
       'ให้ยาสามประสาน: ยาลดการหลั่งน้ำย่อย (Octreotide หรือ Buscopan) + ยาลดบวมก้อนมะเร็ง (Dexamethasone) + ยาระงับอาเจียนส่วนกลาง (Haloperidol)',
-      'ให้มอร์ฟีนระงับปวดตื้อ และให้ Buscopan ระงับอาการปวดบิดเกร็ง',
+      'ให้ morphine ระงับปวดตื้อ และให้ Buscopan ระงับอาการปวดบิดเกร็ง',
       'ประเมินผ่าตัดบายพาสหรือใส่ขดลวดขยายลำไส้ หากอุดตันเพียงจุดเดียวและสภาพร่างกายยังแข็งแรง (PPS > 50%)'
     ],
     medicationsEn: [
@@ -307,14 +307,14 @@ export const PALLIATIVE_EMERGENCIES: PalliativeEmergency[] = [
       'Hyoscine butylbromide (Buscopan) 60 - 120 มก./วัน ดริป SC หรือฉีด 20 มก. SC ทุก 4-6 ชม. (ลดการบีบเกร็งและลดสารคัดหลั่ง)',
       'Dexamethasone 8 - 16 มก. IV หรือ SC วันละครั้งตอนเช้า (ลดการบวมน้ำรอบก้อนมะเร็งที่อุดกั้น)',
       'Haloperidol 1.5 - 3 มก./วัน SC เพื่อระงับอาการคลื่นไส้',
-      'มอร์ฟีนฉีดใต้ผิวหนังเพื่อระงับความเจ็บปวด'
+      'Morphine ฉีดใต้ผิวหนังเพื่อระงับความเจ็บปวด'
     ],
     cautionsEn: [
       'Never use stimulant laxatives (Senna, Bisacodyl) or bulk-forming fibers in complete bowel obstruction.',
       'Subcutaneous butterfly infusion pump is the preferred route as oral absorption is zero.'
     ],
     cautionsTh: [
-      'ห้ามใช้ยาระบายกระตุ้นลำไส้ (มะขามแขก, Bisacodyl) หรือยาระบายเพิ่มกากใยเด็ดขาดในภาวะลำไส้อุดกั้นสมบูรณ์',
+      'ห้ามใช้ยาระบายกระตุ้นลำไส้ (Senna, Bisacodyl) หรือยาระบายเพิ่มกากใยเด็ดขาดในภาวะลำไส้อุดกั้นสมบูรณ์',
       'การให้ยาทางสายฉีดใต้ผิวหนัง (Subcutaneous Butterfly) เป็นทางเลือกที่ดีที่สุดเนื่องจากยาไม่สามารถดูดซึมผ่านทางเดินอาหารได้'
     ]
   }

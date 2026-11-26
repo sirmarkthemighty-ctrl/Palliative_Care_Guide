@@ -241,7 +241,7 @@ export const DISEASE_SPECIFIC_TRIGGERS: DiseaseTrigger[] = [
     clinicalNotesEn:
       'Early integration of palliative care alongside oncology improves both survival duration and quality of life (Temel et al., NEJM). Do not withhold opioids out of fear of addiction.',
     clinicalNotesTh:
-      'การเริ่มดูแลแบบประคับประคองร่วมกับการรักษามะเร็งตั้งแต่เนิ่นๆ ช่วยเพิ่มทั้งคุณภาพชีวิตและระยะเวลารอดชีวิต (การศึกษาของ Temel et al.) ไม่ควรชะลอการใช้มอร์ฟีนเพราะกลัวการติดยา'
+      'การเริ่มดูแลแบบประคับประคองร่วมกับการรักษามะเร็งตั้งแต่เนิ่นๆ ช่วยเพิ่มทั้งคุณภาพชีวิตและระยะเวลารอดชีวิต (การศึกษาของ Temel et al.) ไม่ควรชะลอการใช้ morphine เพราะกลัวการติดยา'
   },
   {
     id: 'heart_failure',
@@ -291,7 +291,7 @@ export const DISEASE_SPECIFIC_TRIGGERS: DiseaseTrigger[] = [
     clinicalNotesEn:
       'Low-dose oral/parenteral morphine (2.5-5 mg PO q4-6h) is safe, effective, and evidence-based for refractory dyspnea; it does NOT cause clinically significant respiratory depression when titrated properly. Handheld fan to the face stimulates the trigeminal V2 nerve branch to relieve breathlessness sensation.',
     clinicalNotesTh:
-      'การใช้ยามอร์ฟีนขนาดต่ำ (เช่น 2.5-5 มก. กินทุก 4-6 ชม.) มีหลักฐานยืนยันชัดเจนว่าช่วยบรรเทาอาการเหนื่อยหอบได้อย่างปลอดภัย ไม่กดการหายใจหากปรับยาอย่างถูกต้อง การใช้พัดลมมือถือเป่าบริเวณใบหน้าช่วยกระตุ้นเส้นประสาทสมองคู่ที่ 5 ลดความรู้สึกหายใจไม่อิ่มได้ดี'
+      'การใช้ยา morphine ขนาดต่ำ (เช่น 2.5-5 มก. กินทุก 4-6 ชม.) มีหลักฐานยืนยันชัดเจนว่าช่วยบรรเทาอาการเหนื่อยหอบได้อย่างปลอดภัย ไม่กดการหายใจหากปรับยาอย่างถูกต้อง การใช้พัดลมมือถือเป่าบริเวณใบหน้าช่วยกระตุ้นเส้นประสาทสมองคู่ที่ 5 ลดความรู้สึกหายใจไม่อิ่มได้ดี'
   },
   {
     id: 'renal_failure',
@@ -312,7 +312,7 @@ export const DISEASE_SPECIFIC_TRIGGERS: DiseaseTrigger[] = [
     clinicalNotesEn:
       'AVOID regular morphine, codeine, or pethidine in severe renal failure because active neurotoxic metabolites (M6G, M3G, normeperidine) accumulate rapidly and cause severe sedation, myoclonus, and respiratory depression. FENTANYL and METHADONE are the opioids of choice in severe renal impairment.',
     clinicalNotesTh:
-      'ข้อควรระวังสำคัญ: หลีกเลี่ยงการใช้มอร์ฟีน โคเดอีน และเพทิดีนเป็นประจำในผู้ป่วยไตวายรุนแรง เพราะสารเมแทบอไลต์ (M6G, M3G, normeperidine) จะสะสมในเลือด ทำให้เกิดพิษ ง่วงซึม โคม่า กล้ามเนื้อกระตุก (Myoclonus) และกดการหายใจ ควรเลือกใช้ FENTANYL เป็นยาหลัก'
+      'ข้อควรระวังสำคัญ: หลีกเลี่ยงการใช้ morphine, codeine และ pethidine เป็นประจำในผู้ป่วยไตวายรุนแรง เพราะสารเมแทบอไลต์ (M6G, M3G, normeperidine) จะสะสมในเลือด ทำให้เกิดพิษ ง่วงซึม โคม่า กล้ามเนื้อกระตุก (Myoclonus) และกดการหายใจ ควรเลือกใช้ FENTANYL เป็นยาหลัก'
   },
   {
     id: 'liver_failure',

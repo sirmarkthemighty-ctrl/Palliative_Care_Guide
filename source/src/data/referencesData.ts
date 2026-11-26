@@ -64,7 +64,7 @@ export const CLINICAL_REFERENCES: PalliativeReference[] = [
     descriptionEn:
       'Global standards for the 3-step analgesic ladder, around-the-clock opioid dosing, management of breakthrough pain, and essential adjuvants.',
     descriptionTh:
-      'มาตรฐานสากลเรื่องบันได 3 ขั้นของการระงับปวด การใช้ยามอร์ฟีนอย่างสมเหตุผล และการจัดการอาการปวดกำเริบฉับพลัน'
+      'มาตรฐานสากลเรื่องบันได 3 ขั้นของการระงับปวด การใช้ยา morphine อย่างสมเหตุผล และการจัดการอาการปวดกำเริบฉับพลัน'
   },
   {
     id: 'eapc_opioid_guidelines',

@@ -29,7 +29,7 @@ export default function App() {
   const [currentTab, setCurrentTab] = useState<NavTabId>('when-to-start');
   const [language, setLanguage] = useState<Language>(() => {
     const saved = safeStore('palcare_lang');
-    return (saved === 'en' || saved === 'th' ? saved : 'th') as Language;
+    return (saved === 'en' || saved === 'th' ? saved : 'en') as Language;
   });
   const [isDarkMode, setIsDarkMode] = useState<boolean>(() => {
     const saved = safeStore('palcare_theme');

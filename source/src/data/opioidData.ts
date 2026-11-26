@@ -4,7 +4,7 @@ export const OPIOID_DRUGS: OpioidDrug[] = [
   {
     id: 'morphine_oral',
     nameEn: 'Morphine Oral (IR / Syrup)',
-    nameTh: 'มอร์ฟีนรับประทาน (เม็ดปลดปล่อยทันที / ยาน้ำเชื่อม)',
+    nameTh: 'Morphine รับประทาน (เม็ดปลดปล่อยทันที / ยาน้ำเชื่อม)',
     route: 'oral',
     unit: 'mg/day',
     factorToOralMorphine: 1.0,
@@ -22,7 +22,7 @@ export const OPIOID_DRUGS: OpioidDrug[] = [
   {
     id: 'kapanol',
     nameEn: 'Kapanol® (Morphine SR 24-hr Capsule)',
-    nameTh: 'คาพานอล Kapanol® (มอร์ฟีนแคปซูลควบคุมการปลดปล่อย 24 ชม.)',
+    nameTh: 'Kapanol® (Morphine แคปซูลควบคุมการปลดปล่อย 24 ชม.)',
     route: 'oral',
     unit: 'mg/day',
     factorToOralMorphine: 1.0,
@@ -40,7 +40,7 @@ export const OPIOID_DRUGS: OpioidDrug[] = [
   {
     id: 'mst_continus',
     nameEn: 'MST Continus® (Morphine CR 12-hr Tablet)',
-    nameTh: 'เอ็มเอสที คอนตินัส MST Continus® (มอร์ฟีนเม็ดออกฤทธิ์นาน 12 ชม.)',
+    nameTh: 'MST Continus® (Morphine เม็ดออกฤทธิ์นาน 12 ชม.)',
     route: 'oral',
     unit: 'mg/day',
     factorToOralMorphine: 1.0,
@@ -58,7 +58,7 @@ export const OPIOID_DRUGS: OpioidDrug[] = [
   {
     id: 'morphine_parenteral',
     nameEn: 'Morphine IV / SC Injection',
-    nameTh: 'มอร์ฟีนฉีด เข้าหลอดเลือดดำ (IV) / ใต้ผิวหนัง (SC)',
+    nameTh: 'Morphine ฉีด เข้าหลอดเลือดดำ (IV) / ใต้ผิวหนัง (SC)',
     route: 'iv_sc',
     unit: 'mg/day',
     factorToOralMorphine: 3.0, // 1 mg IV/SC = 3 mg Oral
@@ -76,7 +76,7 @@ export const OPIOID_DRUGS: OpioidDrug[] = [
   {
     id: 'fentanyl_patch',
     nameEn: 'Fentanyl Transdermal Patch (Durogesic®)',
-    nameTh: 'เฟนตานิล แผ่นแปะผิวหนัง (Fentanyl Patch)',
+    nameTh: 'Fentanyl แผ่นแปะผิวหนัง (Durogesic®)',
     route: 'transdermal',
     unit: 'mcg/hr',
     // Per Thai CPG Table 9.1.3:
@@ -90,7 +90,7 @@ export const OPIOID_DRUGS: OpioidDrug[] = [
     frequencyEn: 'Apply to dry hairless skin; replace every 72 hours (3 days)',
     frequencyTh: 'ปิดบริเวณผิวหนังที่แห้ง เรียบ ไม่มีขน เปลี่ยนแผ่นยาทุก 72 ชม. (3 วัน)',
     notesEn: 'Lipophilic opioid. Onset is delayed (12-24 hours). Keep previous opioid running for first 12-24 hrs. Avoid external heat (electric blanket, hot water bag, fever increases absorption). Less constipation.',
-    notesTh: 'ละลายในไขมันดี เริ่มออกฤทธิ์ช้า 12-24 ชม. ต้องให้ยาเดิมต่ออีก 12-24 ชม. แรกหลังแปะแผ่นใหม่ ห้ามประคบร้อนหรือผ้าห่มไฟฟ้าสัมผัสแผ่นยา ท้องผูกน้อยกว่ามอร์ฟีน',
+    notesTh: 'ละลายในไขมันดี เริ่มออกฤทธิ์ช้า 12-24 ชม. ต้องให้ยาเดิมต่ออีก 12-24 ชม. แรกหลังแปะแผ่นใหม่ ห้ามประคบร้อนหรือผ้าห่มไฟฟ้าสัมผัสแผ่นยา ท้องผูกน้อยกว่า morphine',
     renalSafety: 'safe',
     renalNoteEn: 'Preferred opioid in renal impairment (no active nephrotoxic metabolites). Hepatically cleared.',
     renalNoteTh: 'ปลอดภัยในผู้ป่วยโรคไตวายเรื้อรัง (ยาขับทางตับ ไม่มีเมแทบอไลต์กดประสาทสะสมในไต)'
@@ -98,12 +98,13 @@ export const OPIOID_DRUGS: OpioidDrug[] = [
   {
     id: 'fentanyl_parenteral',
     nameEn: 'Fentanyl IV / SC Injection',
-    nameTh: 'เฟนตานิลฉีด เข้าหลอดเลือดดำ (IV) / ใต้ผิวหนัง (SC)',
+    nameTh: 'Fentanyl ฉีด เข้าหลอดเลือดดำ (IV) / ใต้ผิวหนัง (SC)',
     route: 'iv_sc',
     unit: 'mcg/day',
-    // 100 mcg IV fentanyl ≈ 10 mg IV morphine ≈ 30 mg oral morphine (1 mcg IV fentanyl = 0.3 mg oral morphine)
-    factorToOralMorphine: 0.3,
-    factorFromOralMorphine: 1 / 0.3,
+    // Patch-table method (chronic use): 1 mcg/h by infusion = 1 mcg/h patch = 2.4 mg oral morphine/day, so 0.1 per mcg/day.
+    // The calculator uses the Table 9.1.3 bands for this target; below the table it falls back to 100 : 1 (see OpioidCalcTab).
+    factorToOralMorphine: 0.1,
+    factorFromOralMorphine: 10.0,
     formulationsEn: ['Ampoule 100 mcg / 2 mL (50 mcg/mL)'],
     formulationsTh: ['แอมพูล 100 มคก. / 2 มล. (50 มคก./มล.)'],
     frequencyEn: 'Continuous IV/SC infusion OR bolus every 30-60 min',
@@ -117,7 +118,7 @@ export const OPIOID_DRUGS: OpioidDrug[] = [
   {
     id: 'tramadol_oral',
     nameEn: 'Tramadol Oral (Capsule / Drops / SR)',
-    nameTh: 'ทรามาดอลรับประทาน (แคปซูล / ยาหยด / เม็ดออกฤทธิ์ยาว)',
+    nameTh: 'Tramadol รับประทาน (แคปซูล / ยาหยด / เม็ดออกฤทธิ์ยาว)',
     route: 'oral',
     unit: 'mg/day',
     factorToOralMorphine: 0.1, // 100 mg Tramadol ≈ 10 mg Oral Morphine (10:1 ratio)
@@ -135,7 +136,7 @@ export const OPIOID_DRUGS: OpioidDrug[] = [
   {
     id: 'tramadol_parenteral',
     nameEn: 'Tramadol IV / SC Injection',
-    nameTh: 'ทรามาดอลฉีด เข้าหลอดเลือดดำ (IV) / ใต้ผิวหนัง (SC)',
+    nameTh: 'Tramadol ฉีด เข้าหลอดเลือดดำ (IV) / ใต้ผิวหนัง (SC)',
     route: 'iv_sc',
     unit: 'mg/day',
     factorToOralMorphine: 0.1, // set equal to oral tramadol (100 mg ≈ 10 mg oral morphine); PCF parenteral 1:10 would give 0.3, low-quality evidence
@@ -153,7 +154,7 @@ export const OPIOID_DRUGS: OpioidDrug[] = [
   {
     id: 'oxycodone_oral',
     nameEn: 'Oxycodone Oral (CR 12-hr)',
-    nameTh: 'ออกซีโคโดนรับประทาน (Oxycodone CR ออกฤทธิ์ยาว 12 ชม.)',
+    nameTh: 'Oxycodone รับประทาน (ชนิด CR ออกฤทธิ์ยาว 12 ชม.)',
     route: 'oral',
     unit: 'mg/day',
     factorToOralMorphine: 1.5, // 10 mg Oxycodone ≈ 15 mg Oral Morphine
@@ -163,7 +164,7 @@ export const OPIOID_DRUGS: OpioidDrug[] = [
     frequencyEn: 'Every 12 hours (swallow whole)',
     frequencyTh: 'รับประทานทุก 12 ชม. กลืนทั้งเม็ด ห้ามบดเคี้ยว',
     notesEn: 'Potency 1.5 - 2x oral morphine. Bioavailability 60-87%. Similar efficacy and side effect profile to morphine. Non-essential list in Thailand (ยานอกบัญชียาหลักแห่งชาติ).',
-    notesTh: 'แรงกว่ามอร์ฟีน 1.5 - 2 เท่า ดูดซึมดี 60-87% ในไทยจัดเป็นยานอกบัญชียาหลักแห่งชาติ',
+    notesTh: 'แรงกว่า morphine 1.5 - 2 เท่า ดูดซึมดี 60-87% ในไทยจัดเป็นยานอกบัญชียาหลักแห่งชาติ',
     renalSafety: 'caution',
     renalNoteEn: 'Metabolites cleared by kidneys. Reduce dose in renal impairment.',
     renalNoteTh: 'ขับออกทางไต ต้องปรับลดขนาดยาในผู้ป่วยไตบกพร่อง'
@@ -171,7 +172,7 @@ export const OPIOID_DRUGS: OpioidDrug[] = [
   {
     id: 'codeine_oral',
     nameEn: 'Codeine Oral',
-    nameTh: 'โคเดอีนรับประทาน (Codeine)',
+    nameTh: 'Codeine รับประทาน',
     route: 'oral',
     unit: 'mg/day',
     factorToOralMorphine: 0.1, // 100 mg Codeine ≈ 10 mg Oral Morphine
@@ -181,7 +182,7 @@ export const OPIOID_DRUGS: OpioidDrug[] = [
     frequencyEn: 'Every 4-6 hours; Max 240 mg/day',
     frequencyTh: 'รับประทานทุก 4-6 ชม. สูงสุด 240 มก./วัน',
     notesEn: 'Prodrug converted to morphine by CYP2D6. Ineffective in poor metabolizers; toxic in ultra-rapid metabolizers. Removed from WHO pediatric guideline.',
-    notesTh: 'เป็น Prodrug ต้องเปลี่ยนเป็นมอร์ฟีนผ่าน CYP2D6 ใน slow metabolizer จะไม่หายปวด ส่วน ultra-rapid จะเกิดพิษ WHO ถอดออกจากแนวทางในเด็กแล้ว',
+    notesTh: 'เป็น Prodrug ต้องเปลี่ยนเป็น morphine ผ่าน CYP2D6 ใน slow metabolizer จะไม่หายปวด ส่วน ultra-rapid จะเกิดพิษ WHO ถอดออกจากแนวทางในเด็กแล้ว',
     renalSafety: 'caution',
     renalNoteEn: 'Reduce dose in renal impairment. Avoid in end-stage renal disease.',
     renalNoteTh: 'ต้องลดขนาดยาในผู้ป่วยไตวาย ไม่ควรใช้ในระยะสุดท้ายของไต'

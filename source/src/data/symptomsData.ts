@@ -135,70 +135,70 @@ export const SYMPTOMS_DATA: SymptomDetail[] = [
     ],
     pharmTableTh: [
       {
-        drug: 'พาราเซตามอล (Paracetamol)',
+        drug: 'Paracetamol',
         route: 'รับประทาน / ฉีด',
         dose: '500 มก. (10-15 มก./กก.)',
         frequency: 'ทุก 4-6 ชม. (สูงสุดไม่เกิน 2,000-3,000 มก./วัน)',
         indicationOrNote: 'WHO ขั้นที่ 1: ปวดน้อยถึงปานกลาง โรคตับไม่ควรเกิน 2,000 มก./วัน'
       },
       {
-        drug: 'มอร์ฟีนออกฤทธิ์สั้น (MO IR เม็ด/ยาน้ำ)',
+        drug: 'Morphine ออกฤทธิ์สั้น (MO IR เม็ด/ยาน้ำ)',
         route: 'รับประทาน',
         dose: '5 - 10 มก. (ผู้สูงอายุ/ไตเสื่อม: 2.5 - 5 มก.)',
         frequency: 'ทุก 4 ชม. สม่ำเสมอ + ทุก 1-2 ชม. เมื่อมีอาการปวดกำเริบ (PRN)',
         indicationOrNote: 'WHO ขั้นที่ 3: ยามาตรฐาน ขนาดยาปวดกำเริบ (Breakthrough) คิดเป็น 10-15% ของขนาดรวมทั้งวัน'
       },
       {
-        drug: 'มอร์ฟีนฉีด (Morphine Injection)',
+        drug: 'Morphine ฉีด',
         route: 'IV หรือ SC',
         dose: '2 - 5 มก. (หรือ 1/3 ของขนาดยากิน)',
         frequency: 'ทุก 3-4 ชม. หรือดริปต่อเนื่อง + PRN ทุก 1 ชม.',
         indicationOrNote: 'สำหรับปวดรุนแรงเฉียบพลันหรือกลืนไม่ได้ อัตราส่วนยากินต่อยาฉีด = 3:1 (ห้ามฉีดเข้ากล้ามเนื้อ IM)'
       },
       {
-        drug: 'คาพานอล Kapanol® (แคปซูล 24 ชม.)',
+        drug: 'Kapanol® (แคปซูล 24 ชม.)',
         route: 'รับประทาน',
         dose: '20, 50, 100 มก. วันละครั้ง',
         frequency: 'ทุก 24 ชม. (เวลาเดิมทุกวัน)',
         indicationOrNote: 'เม็ดเล็กเคลือบโพลิเมอร์ แกะแคปซูลโรยบนอาหารหรือให้ทางสายยางได้ แต่ห้ามบด ห้ามเคี้ยวเด็ดขาด'
       },
       {
-        drug: 'เอ็มเอสที MST Continus® (เม็ด 12 ชม.)',
+        drug: 'MST Continus® (เม็ด 12 ชม.)',
         route: 'รับประทาน',
         dose: '10, 30, 60 มก.',
         frequency: 'ทุก 12 ชม. (เช่น 08.00 น. และ 20.00 น.)',
         indicationOrNote: 'เม็ดควบคุมการปลดปล่อย ต้องกลืนทั้งเม็ด ห้ามหัก ห้ามแบ่ง ห้ามบดเคี้ยว'
       },
       {
-        drug: 'เฟนตานิลแผ่นแปะ (Fentanyl Patch)',
+        drug: 'Fentanyl แผ่นแปะ',
         route: 'แผ่นแปะผิวหนัง',
         dose: '12, 25, 50, 75, 100 มคก./ชม.',
         frequency: 'เปลี่ยนแผ่นยาทุก 72 ชม. (3 วัน)',
         indicationOrNote: 'ยาทางเลือกอันดับแรกในผู้ป่วยไตวาย เริ่มออกฤทธิ์ช้า 12-24 ชม. ห้ามประคบร้อนบนแผ่นยา'
       },
       {
-        drug: 'ทรามาดอล (Tramadol)',
+        drug: 'Tramadol',
         route: 'รับประทาน / ฉีด',
         dose: '50 - 100 มก.',
         frequency: 'ทุก 6-8 ชม. (สูงสุด 400 มก./วัน, ผู้สูงอายุ 300 มก./วัน)',
         indicationOrNote: 'WHO ขั้นที่ 2: ปวดปานกลาง ระวังชักและ Serotonin syndrome ห้ามใช้ในไตวายรุนแรง'
       },
       {
-        drug: 'กาบาเพนติน (Gabapentin)',
+        drug: 'Gabapentin',
         route: 'รับประทาน',
         dose: 'เริ่ม 100-300 มก. ก่อนนอน ปรับเพิ่มได้ถึง 900-1800 มก./วัน',
         frequency: 'วันละ 3 ครั้ง (ปรับลดตาม eGFR)',
         indicationOrNote: 'ยาเสริมอันดับแรกสำหรับปวดเส้นประสาท (Neuropathic pain) ต้องปรับขนาดยาตามค่าไต'
       },
       {
-        drug: 'พรีกาบาลิน (Pregabalin)',
+        drug: 'Pregabalin',
         route: 'รับประทาน',
         dose: 'เริ่ม 25-75 มก. ก่อนนอน ปรับเป็น 75-150 มก. วันละ 2 ครั้ง',
         frequency: 'วันละ 2 ครั้ง (ปรับลดตาม eGFR)',
         indicationOrNote: 'ปวดเส้นประสาท ออกฤทธิ์เร็ว ปรับขนาดยาง่ายกว่า ต้องลดขนาดยาในผู้ป่วยไตเสื่อม'
       },
       {
-        drug: 'เดกซาเมทาโซน (Dexamethasone)',
+        drug: 'Dexamethasone',
         route: 'รับประทาน / IV / SC',
         dose: '4 - 16 มก. วันละ 1 ครั้งตอนเช้า',
         frequency: 'วันละ 1 ครั้งตอนเช้า (ให้ยาลดกรด PPI ร่วมด้วย)',
@@ -212,9 +212,9 @@ export const SYMPTOMS_DATA: SymptomDetail[] = [
       'Never combine weak opioids (Tramadol/Codeine) with strong opioids (Morphine/Fentanyl); switch directly to Step 3 with proper dose conversion.'
     ],
     clinicalPearlsTh: [
-      'ต้องสั่งจ่ายยาระบายกลุ่มกระตุ้นลำไส้ (เช่น มะขามแขก Senna หรือ Bisacodyl) ควบคู่กับยากลุ่มโอปิออยด์ตั้งแต่วันแรกเสมอ ผู้ป่วยจะชินต่ออาการง่วงและคลื่นไส้ได้ แต่ไม่มีวันชินต่ออาการท้องผูก',
-      'หลักการปรับเพิ่มยามอร์ฟีน: นำขนาดยาทั้งหมดที่ผู้ป่วยได้รับใน 24 ชั่วโมง (ทั้งมื้อประจำ + มื้อเสริมแก้ปวดฉับพลัน) มารวมกันเพื่อตั้งเป็นขนาดยาควบคุมประจำวันมื้อใหม่',
-      'ขนาดยาปวดกำเริบฉับพลัน (Breakthrough dose): คิดเป็น 10-15% (หรือ 1 ใน 6) ของขนาดยามอร์ฟีนรับประทานรวมทั้งวัน รับประทานซ้ำได้ทุก 2-4 ชม. (หรือฉีด SC/IV ซ้ำได้ทุก 1-2 ชม.)',
+      'ต้องสั่งจ่ายยาระบายกลุ่มกระตุ้นลำไส้ (เช่น Senna หรือ Bisacodyl) ควบคู่กับยากลุ่มโอปิออยด์ตั้งแต่วันแรกเสมอ ผู้ป่วยจะชินต่ออาการง่วงและคลื่นไส้ได้ แต่ไม่มีวันชินต่ออาการท้องผูก',
+      'หลักการปรับเพิ่มยา morphine: นำขนาดยาทั้งหมดที่ผู้ป่วยได้รับใน 24 ชั่วโมง (ทั้งมื้อประจำ + มื้อเสริมแก้ปวดฉับพลัน) มารวมกันเพื่อตั้งเป็นขนาดยาควบคุมประจำวันมื้อใหม่',
+      'ขนาดยาปวดกำเริบฉับพลัน (Breakthrough dose): คิดเป็น 10-15% (หรือ 1 ใน 6) ของขนาดยา morphine รับประทานรวมทั้งวัน รับประทานซ้ำได้ทุก 2-4 ชม. (หรือฉีด SC/IV ซ้ำได้ทุก 1-2 ชม.)',
       'ห้ามใช้ Weak opioid (Tramadol/Codeine) ซ้ำซ้อนกับ Strong opioid (Morphine/Fentanyl) หากคุมปวดไม่ได้ให้ปรับข้ามบันไดขึ้นเป็นยาขั้นที่ 3 ทันที'
     ],
     contraindicationsEn: [
@@ -223,9 +223,9 @@ export const SYMPTOMS_DATA: SymptomDetail[] = [
       'Codeine in children and ultra-rapid/slow CYP2D6 metabolizers.'
     ],
     contraindicationsTh: [
-      'เพทิดีน (Pethidine): ห้ามใช้ติดต่อกันระยะยาวในการระงับปวดมะเร็งและประคับประคองเด็ดขาด เพราะสารเมแทบอไลต์ Normeperidine มีพิษต่อระบบประสาท ทำให้กล้ามเนื้อกระตุก เพ้อ และชัก',
-      'มอร์ฟีนในผู้ป่วยไตวายรุนแรง (eGFR < 30 มล./นาที): สารเมแทบอไลต์ M3G และ M6G สะสม เสี่ยงกดการหายใจและโคม่า ให้เปลี่ยนเป็น Fentanyl',
-      'โคเดอีน (Codeine): ห้ามใช้ในเด็ก และมีประสิทธิภาพไม่แน่นอนในกลุ่มพันธุกรรม CYP2D6'
+      'Pethidine: ห้ามใช้ติดต่อกันระยะยาวในการระงับปวดมะเร็งและประคับประคองเด็ดขาด เพราะสารเมแทบอไลต์ Normeperidine มีพิษต่อระบบประสาท ทำให้กล้ามเนื้อกระตุก เพ้อ และชัก',
+      'Morphine ในผู้ป่วยไตวายรุนแรง (eGFR < 30 มล./นาที): สารเมแทบอไลต์ M3G และ M6G สะสม เสี่ยงกดการหายใจและโคม่า ให้เปลี่ยนเป็น Fentanyl',
+      'Codeine: ห้ามใช้ในเด็ก และมีประสิทธิภาพไม่แน่นอนในกลุ่มพันธุกรรม CYP2D6'
     ]
   },
   {
@@ -236,7 +236,7 @@ export const SYMPTOMS_DATA: SymptomDetail[] = [
     summaryEn:
       'Dyspnea is a subjective sensation of breathlessness. Opioids are the gold standard for refractory dyspnea, reducing respiratory drive perception without causing hypercapnia when dosed appropriately. Terminal secretions ("Death Rattle") occur in the final hours/days due to lost swallowing reflexes; treat with positioning and anticholinergics, avoiding painful deep suctioning.',
     summaryTh:
-      'อาการหายใจลำบาก (Dyspnea) เป็นความรู้สึกส่วนบุคคล ยามอร์ฟีนขนาดต่ำเป็นยามาตรฐานในการลดความรู้สึกเหนื่อยหอบ สำหรับเสมหะคั่งในคอหอยช่วงใกล้เสียชีวิต (Death Rattle) เกิดจากการกลืนน้ำลายไม่ได้ ให้จัดท่านอนตะแคงและใช้ยาแอนติโคลิเนอร์จิก ไม่แนะนำให้ดูดเสมหะลึกเพราะสร้างความทรมาน',
+      'อาการหายใจลำบาก (Dyspnea) เป็นความรู้สึกส่วนบุคคล ยา morphine ขนาดต่ำเป็นยามาตรฐานในการลดความรู้สึกเหนื่อยหอบ สำหรับเสมหะคั่งในคอหอยช่วงใกล้เสียชีวิต (Death Rattle) เกิดจากการกลืนน้ำลายไม่ได้ ให้จัดท่านอนตะแคงและใช้ยาแอนติโคลิเนอร์จิก ไม่แนะนำให้ดูดเสมหะลึกเพราะสร้างความทรมาน',
     assessmentEn: [
       'Evaluate severity using Numeric Rating Scale (0-10) or Modified Borg Scale (MBS) / mMRC.',
       'Check for reversible causes: bronchospasm, pleural effusion, pneumonia, pulmonary edema, severe anemia, pneumothorax, pericardial effusion, SVC obstruction.',
@@ -314,35 +314,35 @@ export const SYMPTOMS_DATA: SymptomDetail[] = [
     ],
     pharmTableTh: [
       {
-        drug: 'มอร์ฟีนรับประทาน (ในผู้ที่ไม่เคยได้มาก่อน)',
+        drug: 'Morphine รับประทาน (ในผู้ที่ไม่เคยได้มาก่อน)',
         route: 'รับประทาน (ยาน้ำ/ยาเม็ด)',
         dose: '2.5 - 5 มก.',
         frequency: 'ทุก 4 ชม. สม่ำเสมอ + ทุก 1-2 ชม. เมื่อเหนื่อยกำเริบ',
         indicationOrNote: 'ยามาตรฐานอันดับแรกสำหรับลดอาการหายใจลำบากที่รักษาโรคเดิมเต็มที่แล้ว'
       },
       {
-        drug: 'มอร์ฟีนฉีด (ในผู้ที่ไม่เคยได้มาก่อน)',
+        drug: 'Morphine ฉีด (ในผู้ที่ไม่เคยได้มาก่อน)',
         route: 'IV หรือ SC',
         dose: '1 - 2.5 มก.',
         frequency: 'ทุก 3-4 ชม. หรือ PRN ทุก 1 ชม.',
         indicationOrNote: 'สำหรับอาการเหนื่อยเฉียบพลัน หรือผู้ป่วยใกล้เสียชีวิตที่กลืนไม่ได้'
       },
       {
-        drug: 'มอร์ฟีน (ในผู้ที่ได้รับมอร์ฟีนอยู่เดิม)',
+        drug: 'Morphine (ในผู้ที่ได้รับ morphine อยู่เดิม)',
         route: 'รับประทาน / ฉีด',
         dose: 'เพิ่มขนาดยา 25-50% จากเดิม หรือให้มื้อเสริม 10-15% ของขนาด 24 ชม.',
         frequency: 'PRN ทุก 1-2 ชม.',
         indicationOrNote: 'ปรับเพิ่มยาเดิมเพื่อคุมอาการเหนื่อยหอบ'
       },
       {
-        drug: 'มิดาโซแลม (Midazolam)',
+        drug: 'Midazolam',
         route: 'SC หรือ IV',
         dose: '2.5 - 5 มก. SC (หรือดริป 0.5 - 1 มก./ชม.)',
         frequency: 'PRN ทุก 1-2 ชม. สำหรับภาวะเหนื่อยวิกฤติร่วมกับตื่นตระหนก',
         indicationOrNote: 'ลดความวิตกกังวล ตื่นตระหนก และความกลัวจากการขาดอากาศหายใจ'
       },
       {
-        drug: 'ไฮออสซีน บิวทิลโบรไมด์ (Hyoscine butylbromide / Buscopan®)',
+        drug: 'Hyoscine butylbromide (Buscopan®)',
         route: 'SC หรือ IV',
         dose: '20 มก.',
         frequency: 'ทุก 4-6 ชม. PRN หรือฉีดประจำ (สูงสุด 100 มก./วัน)',
@@ -440,21 +440,21 @@ export const SYMPTOMS_DATA: SymptomDetail[] = [
     ],
     pharmTableTh: [
       {
-        drug: 'ฮาโลเพอริดอล (Haloperidol)',
+        drug: 'Haloperidol',
         route: 'รับประทาน / SC / IV',
         dose: '0.5 - 2 มก. (ผู้สูงอายุ: 0.5 - 1 มก.)',
         frequency: 'ทุก 30-60 นาที PRN จนสงบ จากนั้นรวมขนาดยาปรับให้วันละ 1-2 ครั้ง (0.5-3 มก./วัน)',
         indicationOrNote: 'ยามาตรฐานอันดับแรกสำหรับระงับอาการหูแว่ว ประสาทหลอน หวาดระแวง และสับสนวุ่นวาย'
       },
       {
-        drug: 'มิดาโซแลม (Midazolam)',
+        drug: 'Midazolam',
         route: 'SC หรือ IV',
         dose: '2.5 - 5 มก. ฉีด (หรือดริป 0.5 - 2 มก./ชม.)',
         frequency: 'ทุก 20-30 นาที PRN หรือหยดต่อเนื่อง',
         indicationOrNote: 'สำหรับภาวะกระสับกระส่ายรุนแรงในวาระสุดท้าย (Terminal Agitation Crisis) ที่ไม่ตอบสนองต่อ Haloperidol'
       },
       {
-        drug: 'ไดเฟนไฮดรามีน (Diphenhydramine)',
+        drug: 'Diphenhydramine',
         route: 'รับประทาน / IV',
         dose: '25 - 50 มก.',
         frequency: 'ทุก 6-8 ชม. PRN',
@@ -544,35 +544,35 @@ export const SYMPTOMS_DATA: SymptomDetail[] = [
     ],
     pharmTableTh: [
       {
-        drug: 'เมโทโคลพราไมด์ (Metoclopramide)',
+        drug: 'Metoclopramide',
         route: 'รับประทาน / IV / SC',
         dose: '10 มก.',
         frequency: 'วันละ 3 ครั้ง ก่อนอาหาร (หรือดริป SC 30-60 มก./วัน)',
-        indicationOrNote: 'กระเพาะอาหารบีบตัวช้า อาหารไม่ย่อย คลื่นไส้จากมอร์ฟีน ห้ามใช้เด็ดขาดถ้าลำไส้อุดกั้นสมบูรณ์'
+        indicationOrNote: 'กระเพาะอาหารบีบตัวช้า อาหารไม่ย่อย คลื่นไส้จาก morphine ห้ามใช้เด็ดขาดถ้าลำไส้อุดกั้นสมบูรณ์'
       },
       {
-        drug: 'ฮาโลเพอริดอล (Haloperidol)',
+        drug: 'Haloperidol',
         route: 'รับประทาน / SC',
         dose: '0.5 - 1.5 มก.',
         frequency: 'วันละ 1-2 ครั้ง หรือก่อนนอน',
-        indicationOrNote: 'ยาอันดับแรกสำหรับคลื่นไส้จากมอร์ฟีน, ยูรีเมียจากไตวาย, หรือแคลเซียมในเลือดสูง'
+        indicationOrNote: 'ยาอันดับแรกสำหรับคลื่นไส้จาก morphine, ยูรีเมียจากไตวาย, หรือแคลเซียมในเลือดสูง'
       },
       {
-        drug: 'ออนดันเซตรอน (Ondansetron)',
+        drug: 'Ondansetron',
         route: 'รับประทาน / IV',
         dose: '4 - 8 มก.',
         frequency: 'วันละ 2-3 ครั้ง',
         indicationOrNote: 'คลื่นไส้จากยาเคมีบำบัด การฉายรังสี หรือเยื่อบุช่องท้องระคายเคือง (ระวังผลข้างเคียงท้องผูก)'
       },
       {
-        drug: 'ไดเมนไฮดริเนต (Dimenhydrinate)',
+        drug: 'Dimenhydrinate',
         route: 'รับประทาน / IV',
         dose: '50 มก.',
         frequency: 'ทุก 6-8 ชม. PRN',
         indicationOrNote: 'คลื่นไส้จากระบบการทรงตัว เวียนศีรษะ มะเร็งลุกลามฐานกะโหลกศีรษะ'
       },
       {
-        drug: 'เดกซาเมทาโซน (Dexamethasone)',
+        drug: 'Dexamethasone',
         route: 'รับประทาน / IV / SC',
         dose: '4 - 8 มก.',
         frequency: 'วันละ 1 ครั้งตอนเช้า',
@@ -585,7 +585,7 @@ export const SYMPTOMS_DATA: SymptomDetail[] = [
     ],
     clinicalPearlsTh: [
       'ห้ามใช้ Metoclopramide ในผู้ป่วยที่มีภาวะลำไส้อุดกั้นเชิงกลเด็ดขาด เพราะการกระตุ้นให้ลำไส้บีบตัวสู้กับส่วนที่ตีบตันอาจทำให้ลำไส้แตกทะลุได้',
-      'อาการคลื่นไส้จากมอร์ฟีนส่วนใหญ่จะปรับตัวได้ภายใน 5-7 วันหลังจากเริ่มยา สามารถพิจารณาลดหรือหยุดยาแก้อาเจียนได้หลังผ่านไป 1-2 สัปดาห์'
+      'อาการคลื่นไส้จาก morphine ส่วนใหญ่จะปรับตัวได้ภายใน 5-7 วันหลังจากเริ่มยา สามารถพิจารณาลดหรือหยุดยาแก้อาเจียนได้หลังผ่านไป 1-2 สัปดาห์'
     ],
     contraindicationsEn: ['Metoclopramide in complete mechanical bowel obstruction.'],
     contraindicationsTh: ['ห้ามใช้ Metoclopramide เมื่อลำไส้อุดกั้นสมบูรณ์']
@@ -598,7 +598,7 @@ export const SYMPTOMS_DATA: SymptomDetail[] = [
     summaryEn:
       'Opioid-induced constipation (OIC) affects over 80% of palliative patients. Opioids reduce gut peristalsis, decrease mucosal secretions, and increase anal sphincter tone. Prophylactic stimulant laxatives (Senna or Bisacodyl) are mandatory alongside strong opioids. Bulk-forming fibers (Psyllium) are contraindicated in debilitated/bedbound patients.',
     summaryTh:
-      'อาการท้องผูกจากยาโอปิออยด์พบได้มากกว่า 80% เนื่องจากมอร์ฟีนทำให้ลำไส้บีบตัวช้าลงและลดสารคัดหลั่ง ต้องสั่งจ่ายยาระบายกลุ่มกระตุ้นลำไส้ (Stimulant laxatives เช่น มะขามแขก หรือ Bisacodyl) ควบคู่กับโอปิออยด์ตั้งแต่วันแรกเสมอ ห้ามใช้ยาระบายเพิ่มกากใย (Bulk-forming) ในผู้ป่วยติดเตียงเพราะจะทำให้อุจจาระอุดตันลำไส้',
+      'อาการท้องผูกจากยาโอปิออยด์พบได้มากกว่า 80% เนื่องจาก morphine ทำให้ลำไส้บีบตัวช้าลงและลดสารคัดหลั่ง ต้องสั่งจ่ายยาระบายกลุ่มกระตุ้นลำไส้ (Stimulant laxatives เช่น senna หรือ Bisacodyl) ควบคู่กับโอปิออยด์ตั้งแต่วันแรกเสมอ ห้ามใช้ยาระบายเพิ่มกากใย (Bulk-forming) ในผู้ป่วยติดเตียงเพราะจะทำให้อุจจาระอุดตันลำไส้',
     assessmentEn: [
       'Check date of last bowel movement, stool consistency (Bristol Stool Scale), abdominal distension, bowel sounds.',
       'Perform digital rectal examination (DRE) if severe constipation or impaction suspected, unless neutropenic or thrombocytopenic.',
@@ -660,14 +660,14 @@ export const SYMPTOMS_DATA: SymptomDetail[] = [
     ],
     pharmTableTh: [
       {
-        drug: 'มะขามแขก (Senna / Senokot®)',
+        drug: 'Senna (Senokot®)',
         route: 'รับประทาน',
         dose: '2 - 4 เม็ด',
         frequency: 'ก่อนนอน (ปรับเพิ่มเป็น เช้า-ก่อนนอน ได้)',
-        indicationOrNote: 'ยาอันดับแรกสำหรับท้องผูกจากมอร์ฟีน กระตุ้นประสาทลำไส้ให้บีบตัว'
+        indicationOrNote: 'ยาอันดับแรกสำหรับท้องผูกจาก morphine กระตุ้นประสาทลำไส้ให้บีบตัว'
       },
       {
-        drug: 'บิซาโคดิล (Bisacodyl / Dulcolax®)',
+        drug: 'Bisacodyl (Dulcolax®)',
         route: 'รับประทาน / เหน็บทวาร',
         dose: 'กิน 5-15 มก. ก่อนนอน / เหน็บ 10 มก.',
         frequency: 'กินก่อนนอน หรือเหน็บทวารตอนเช้า',
@@ -681,7 +681,7 @@ export const SYMPTOMS_DATA: SymptomDetail[] = [
         indicationOrNote: 'ยาระบายออสโมซิส ดูดน้ำเข้าลำไส้ ดีกว่า Lactulose เพราะไม่ทำให้ท้องอืด แน่นท้อง'
       },
       {
-        drug: 'แลคตูโลส (Lactulose)',
+        drug: 'Lactulose',
         route: 'รับประทาน (ยาน้ำเชื่อม)',
         dose: '15 - 30 มล.',
         frequency: 'วันละ 1-2 ครั้ง',

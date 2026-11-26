@@ -8,7 +8,7 @@ import { safeStore } from './store';
 // Standalone opioid calculator: same component as the Palliative Care Guide tab.
 // Header, pills and disclaimer follow the Bedside UI of the Adult Bronchodilator Device Guide.
 export default function OpioidApp() {
-  const [language, setLanguage] = useState<Language>(() => (safeStore('palcare_lang') === 'en' ? 'en' : 'th'));
+  const [language, setLanguage] = useState<Language>(() => (safeStore('palcare_lang') === 'th' ? 'th' : 'en'));
   const [isDarkMode, setIsDarkMode] = useState<boolean>(() => {
     const saved = safeStore('palcare_theme');
     if (saved) return saved === 'dark';
@@ -31,7 +31,7 @@ export default function OpioidApp() {
         <div className="flex items-start justify-between gap-3 mb-3 md:mb-4">
           <header className="min-w-0">
             <h1 className="text-lg sm:text-2xl md:text-3xl font-extrabold text-slate-800 dark:text-slate-100 mb-1 md:mb-2 leading-tight">
-              {en ? 'Palliative Opioid Equianalgesic Calculator' : 'เครื่องคำนวณเทียบเคียงและหมุนเวียนยาโอปิออยด์'}
+              {en ? 'Palliative Opioid Calculator' : 'เครื่องคำนวณโอปิออยด์ประคับประคอง'}
             </h1>
             <p className="hidden sm:block text-xs md:text-sm text-slate-600 dark:text-slate-300">
               {en
